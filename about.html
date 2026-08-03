@@ -1,47 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
+    <meta name="description" content="Conheça a trajetória, as habilidades e os objetivos profissionais de Vinícius Yoda.">
+    <meta name="theme-color" content="#07111f">
+    <title>Sobre mim | Vinícius Yoda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-
 <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
     <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+        <a class="marca" href="index.html" aria-label="Página inicial de Vinícius Yoda">VY<span>.</span></a>
+        <nav class="cabecalho__menu" aria-label="Navegação principal">
+            <a class="cabecalho__menu__link" href="index.html">Início</a>
+            <a class="cabecalho__menu__link ativo" href="about.html" aria-current="page">Sobre mim</a>
         </nav>
     </header>
 
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
-            <p class="apresentacao__conteudo__texto">Sou um desenvolvedor em web/mobile com JavaScript, React e React Native. Tenho uma paixão pelo Front-End, o que me levou a buscar conhecimento e aprimoramento constante nessa área.
-            </p>
-            <p class="apresentacao__conteudo__texto">
-                
-Estou procurando oportunidades para iniciar minha carreira em front-end/mobile e estou animado para aprender com profissionais experientes e trabalhar em projetos desafiadores. Durante minha formação, tive a oportunidade de trabalhar em vários projetos acadêmicos e pessoais que me permitiram desenvolver habilidades essenciais para meu sucesso profissional, como javascript, git, react/next.
+    <main id="conteudo" class="sobre">
+        <section class="sobre__intro" aria-labelledby="titulo-sobre">
+            <p class="hero__tag">Minha trajetória</p>
+            <h1 id="titulo-sobre">Tecnologia, curiosidade e <span>evolução constante.</span></h1>
+            <p>Sou desenvolvedor Full Stack e mobile. Trabalho com JavaScript, React e React Native no front-end, além de Python e Django no back-end. Também utilizo Docker e AWS para criar ambientes consistentes e publicar aplicações completas.</p>
+        </section>
 
-</p>
-    <p class="apresentacao__conteudo__texto">
-                
-    <p class="apresentacao__conteudo__texto">
-                
-        Estou comprometido em crescer e aprender continuamente na minha área de atuação e estou animado em colaborar com outras pessoas que compartilham a mesma paixão e dedicação. Se você está procurando um profissional dedicado e entusiasmado para sua equipe, estou disponível para conversarmos mais.
+        <section class="sobre__grade" aria-label="Experiência e objetivos">
+            <article class="cartao">
+                <span class="cartao__numero">01</span>
+                <h2>O que faço</h2>
+                <p>Desenvolvo aplicações de ponta a ponta: interfaces com React e Next.js, experiências mobile com React Native e APIs e serviços no back-end com Python e Django.</p>
+            </article>
+            <article class="cartao">
+                <span class="cartao__numero">02</span>
+                <h2>O que busco</h2>
+                <p>Procuro oportunidades como desenvolvedor Full Stack para colaborar em produtos relevantes, enfrentar desafios técnicos e contribuir em todas as etapas do desenvolvimento.</p>
+            </article>
+            <article class="cartao">
+                <span class="cartao__numero">03</span>
+                <h2>Como trabalho</h2>
+                <p>Valorizo aprendizado contínuo, colaboração e dedicação. Uso Git, Docker e AWS para tornar o desenvolvimento, a entrega e a evolução das aplicações mais confiáveis.</p>
+            </article>
+        </section>
 
-</p>
-
-</p>
+        <section class="chamada">
+            <div>
+                <p class="hero__tag">Vamos construir algo juntos?</p>
+                <h2>Estou aberto a novas oportunidades.</h2>
+            </div>
+            <a class="botao botao--primario" href="https://www.linkedin.com/in/vinicius-yoda-silva/" target="_blank" rel="noopener noreferrer">Entre em contato <span aria-hidden="true">↗</span></a>
         </section>
     </main>
 
     <footer class="rodape">
-        <p>Desenvolvido por Vinícius Yoda.</p>
+        <p>© 2026 Vinícius Yoda. Feito com cuidado e código.</p>
+        <div class="rodape__links">
+            <a href="https://github.com/ViniciusYoda" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/vinicius-yoda-silva/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
     </footer>
 </body>
-
 </html>
